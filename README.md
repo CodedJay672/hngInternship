@@ -6,22 +6,22 @@ Develop and host a web page using HTML, CSS and JS that showcases specific perso
 ## Requirements:
 Slack Name:
 Display your Slack name prominently. 
-Attribute: data-testid="slackUserName" 
+Attribute: data-testid="slackUserName"
 Slack Display Picture: 
-Showcase your Slack profile picture. 
+Showcase your Slack profile picture.
 The image's alt attribute should be your Slack username. 
-Attribute: data-testid="slackDisplayImage" 
-Current Day of the Week: 
-Indicate the current day of the week (e.g., Monday, Tuesday). 
-Attribute: data-testid="currentDayOfTheWeek" 
-Current UTC Time: 
-Display the current UTC time. 
-Attribute: data-testid="current UTCTime" 
-Track: 
-Mention your track (e.g Frontend). 
-Attribute: data-testid="myTrack" 
-GitHub URL: 
-Provide a clickable link to your GitHub repository where the source code for this task resides. 
+Attribute: data-testid="slackDisplayImage"
+Current Day of the Week:
+Indicate the current day of the week (e.g., Monday, Tuesday).
+Attribute: data-testid="currentDayOfTheWeek"
+Current UTC Time:
+Display the current UTC time.
+Attribute: data-testid="current UTCTime"
+Track:
+Mention your track (e.g Frontend).
+Attribute: data-testid="myTrack"
+GitHub URL:
+Provide a clickable link to your GitHub repository where the source code for this task resides.
 Attirbute: data-testid=“githubURL”
 ## SUBMISSION GUIDE:
 Submit your task through the designated submission form at the bottom of this announcement.  Ensure you've:
