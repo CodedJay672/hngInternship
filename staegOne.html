@@ -4,15 +4,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="this is a simple web card" />
+    <link rel="stylesheet" href="./stageOne.css" />
     <title>HNG | Stage One</title>
   </head>
   <body>
-    <div>
-      <img src="./myimg.jpg" alt="slack display picture" data-testid="slackDisplayImage" />
-      <h1 data-testid="slackUserName"></h1>
-      <small data-testid="currentDayOfTheWeek"><span data-testid="currentUTCTime"></span></small>
-      <em data-testid="myTrack"></em>
-      <strong data-testid=“githubURL”></strong>
+    <div class="faceCard">
+      <img src="./myImg.jpg" alt="emmanuel joel" data-testid="slackDisplayImage" width="200" />
+      <h1 data-testid="slackUserName">Emmanuel Joel</h1>
+      <div class="details">
+        <p data-testid="currentDayOfTheWeek" class="weekDay"></p>
+        <p data-testid="currentUTCTime" class="utcTime"></p>
+        <p data-testid="myTrack"><ion-icon name="file-tray-stacked-outline"></ion-icon> Frontend</p>
+        <p data-testid=“githubURL”><ion-icon name="globe-outline"></ion-icon>
+          <a href="https://github.com/CodedJay672/hngInternship" target="_blank">Codedjay672</a>
+        </p>
+      </div>
     </div>
+    <script type="text/javascript">
+      const now = new Date();
+      const time = now.getUTCHours() + ":" + now.getUTCMinutes() + ":" + now.getUTCSeconds();
+      const weekDay = document.querySelector('.weekDay');
+      const utcTime = document.querySelector('.utcTime');
+
+      switch(now.getDay()) {
+        case 0:
+          var day = 'Sunday';
+          break;
+        case 1:
+          var day = 'Monday';
+          break;
+        case 2:
+          var day = 'Tuesday';
+          break;
+        case 3:
+          var day = 'Wednesday';
+          break;
+        case 4:
+          var day = 'Thursday';
+          break;
+        case 5:
+          var day = 'Friday';
+          break;
+        default:
+          var day = 'Saturday';
+      }
+
+      weekDay.innerHTML = day;
+      utcTime.innerHTML = time;
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
