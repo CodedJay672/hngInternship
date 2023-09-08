@@ -16,13 +16,16 @@
         <p data-testid="currentUTCTime" class="utcTime"></p>
         <p data-testid="myTrack"><ion-icon name="file-tray-stacked-outline"></ion-icon> Frontend</p>
         <p data-testid=“githubURL”><ion-icon name="globe-outline"></ion-icon>
-          <a href="https://github.com/CodedJay672/hngInternship" target="_blank">Codedjay672</a>
+          <a href="https://github.com/CodedJay672/hngInternship" target="_blank">Github</a>
         </p>
       </div>
     </div>
     <script type="text/javascript">
       const now = new Date();
-      const time = now.getUTCHours() + ":" + now.getUTCMinutes() + ":" + now.getUTCSeconds();
+      const hour = String(now.getUTCHours());
+      const minute = String(now.getUTCMinutes());
+      const seconds = String(now.getUTCSeconds());
+      const time = hour.padStart(2,"0") + ":" + minute.padStart(2, "0") + ":" + seconds.padStart(2, "0");
       const weekDay = document.querySelector('.weekDay');
       const utcTime = document.querySelector('.utcTime');
 
@@ -50,7 +53,7 @@
       }
 
       weekDay.innerHTML = day;
-      utcTime.innerHTML = time;
+      utcTime.innerHTML = time + " (UTC)";
 
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
