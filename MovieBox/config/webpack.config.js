@@ -10,15 +10,15 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test:/\.css$/,
+        test:/\.css$/i,
         use:['style-loader','css-loader']
       },
       {
-        test:/\.(png|svg|jpg|gif)$/,
-        use:['url-loader']
+        test:/\.(png|svg|jpg|gif)$/i,
+        type:'asset/resource',
       },
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         use: ['html-loader']
       }
     ]
