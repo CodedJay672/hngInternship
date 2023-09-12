@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import tv from "../../asset/tv.png";
+import tv from "../assets/tv.png";
+import Pagination from "../assets/Pagination Box.png";
 
 export default function Hero() {
   return (
@@ -16,16 +17,19 @@ export default function Hero() {
           <ion-icon name="log-in"></ion-icon>
         </div>
       </div>
-      <div className="description">
-        <h1>John Wick 3: Parabellum</h1>
-        <div className="rating">
-          <p>Rating goes in heroSection</p>
+      <div className="pagination">
+        <div className="description">
+          <h1>John Wick 3: Parabellum</h1>
+          <div className="rating">
+            <p>Rating goes in heroSection</p>
+          </div>
+          <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+          <div className="watch">
+            <ion-icon name="play-circle"></ion-icon>
+            <p>WATCH TRAILER</p>
+          </div>
         </div>
-        <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
-        <div className="watch">
-          <ion-icon name="play-circle"></ion-icon>
-          <p>WATCH TRAILER</p>
-        </div>
+        <img src={Pagination} alt="pagination" />
       </div>
     </div>
   )

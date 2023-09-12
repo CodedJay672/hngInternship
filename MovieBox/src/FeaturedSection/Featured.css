@@ -1,5 +1,29 @@
 .featuredMovies {
-  min-height: 20vh;
-  border: 1px solid black;
-  margin-top: 20px;
+  width: 1200px;
+  margin: 30px auto;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 47px;
+}
+
+.title h1 {
+  font-size: 36px;
+  line-height: 46.87px;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.title i {
+  color: #BE123C;
+  font-size: 14px;
 }

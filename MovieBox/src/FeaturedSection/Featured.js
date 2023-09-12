@@ -1,10 +1,15 @@
 import React from "react";
 import "./Featured.css";
+import MovieCard from '../MovieCard/MovieCard';
 
-export default function Featured() {
+export default function Featured({ movies }) {
   return (
     <div className="featuredMovies">
-      <h1>Featured Movies</h1>
+      <div className="title">
+        <h1>Featured Movie</h1>
+        <i>See more</i>
+      </div>
+      <MovieCard movies={movies} />
     </div>
   )
 }

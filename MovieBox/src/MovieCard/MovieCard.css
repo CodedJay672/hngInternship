@@ -1,0 +1,8 @@
+.movieCard {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 46px;
+  width: 1308px;
+}
