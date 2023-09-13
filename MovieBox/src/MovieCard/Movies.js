@@ -12,8 +12,8 @@ export default function Movies({ movie }) {
         data-testid="movie-poster"
       />
       <div className="movieInfo">
-        <h2 data-testid="movie-title">{movie.title}</h2>
-        <p data-testid="movie-release-date">{movie.release_date}</p>
+        <h2 data-testid="movie-title">Title: {movie.title}</h2>
+        <p data-testid="movie-release-date">Realesed: {movie.release_date}</p>
       </div>
     </div>
   )
