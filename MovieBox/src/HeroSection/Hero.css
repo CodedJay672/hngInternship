@@ -107,6 +107,29 @@
   margin: 0;
 }
 
+.rating {
+  width: 184px;
+  height: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating figure{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating figcaption {
+  font-family: "DM Sans";
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 10px;
+}
+
 .description .watch {
   width: 180px;
   height: 36px;

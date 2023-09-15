@@ -1,0 +1,21 @@
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-wrapper button {
+  width: 150px;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-radius: 5px;
+  line-height: 12px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #c0103c;
+}

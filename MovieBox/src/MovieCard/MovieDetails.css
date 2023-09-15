@@ -1,0 +1,138 @@
+.movie-detail-card {
+  border: 1px solid gray;
+  width: 930px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.movie-detail-card .sidebar {
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  border: 1px solid gray;
+  border-radius: 0 20px 20px 0;
+}
+
+.movie-detail-card .header {
+  width: 160px;
+  height: 50px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.movie-detail-card .header span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.movie-detail-card .sidebar-menu a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.movie-detail-card .sidebar-menu ul{
+  list-style-type: none;
+  width: 226px;
+  margin: 20px 0;
+}
+
+.movie-detail-card .sidebar-menu li {
+  margin-bottom: 30px;
+  padding: 16px 16px 16px 46px;
+  margin: 0;
+  color: #666;
+  font-family: 'DM Sans', 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.movie-detail-card .sidebar-menu .active {
+  background-color: #F8E7EB;
+  border-right: 3px solid #BE123C;
+  color: #BE123C;
+}
+
+
+.movie-detail-card .ad {
+  width: 160px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #BE123C;
+  border-radius: 10px;
+  background-color: #F8E7EB;
+  padding: 30px 10px 10px 10px;
+
+}
+
+.movie-detail-card .ad h3 {
+  font-family: 'DM Sans', 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+  line-height: 22.5px;
+  margin-bottom: 20px;
+}
+
+.movie-detail-card .ad p {
+  font-family: 'DM Sans', 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.movie-detail-card .ad button {
+  width: 112px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #BE123C;
+  font-family: 'Poppins', 'DM Sans' sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.movie-detail-card .logout {
+  width: 114px;
+  height: 40px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.movie-detail-card .logout ion-icon {
+  font-size: 30px;
+  color: grey;
+}
+
+.movie-detail-card .logout span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.movie-detail-card .main {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.main .movie-data .overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+}

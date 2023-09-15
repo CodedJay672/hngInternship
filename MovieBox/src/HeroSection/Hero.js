@@ -2,6 +2,8 @@ import React from "react";
 import "./Hero.css";
 import tv from "../assets/tv.png";
 import Pagination from "../assets/Pagination Box.png";
+import imdb from "../assets/imdb.png";
+import tomato from "../assets/tomato.png";
 
 export default function Hero() {
   return (
@@ -21,7 +23,14 @@ export default function Hero() {
         <div className="description">
           <h1>John Wick 3: Parabellum</h1>
           <div className="rating">
-            <p>Rating goes in heroSection</p>
+            <figure>
+              <img src={imdb} alt="IMDb" />
+              <figcaption>86.0/100</figcaption>
+            </figure>
+            <figure>
+              <img src={tomato} alt="Rotten Tomatoes" />
+              <figcaption>97%</figcaption>
+            </figure>
           </div>
           <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
           <div className="watch">
